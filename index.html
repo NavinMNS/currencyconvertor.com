@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+
+<body>
+    <div class="header">
+      <h2>  CURRENCY CONVRETER</h2>
+    </div>
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line"></div>
+    <div class="sub-content">
+        
+    </div>
+    <form action="index.php" method="post" enctype='multipart/form-data'>
+<div class="container">
+    <div class="main-content">
+        <div class="left">
+<select name="from_amount" id="from_amount" class="from_amount" style="width: 150px;margin-top: 60px;height: 30px;">
+    <option value="india" id="india">India</option>
+    <option value="usa" >United States</option>
+    <option value="Canada" >Canada</option>
+    <option value="Mexico" >Mexico</option>
+    <option value="European" >European Union</option>
+    <option value="United Kingdom" >United Kingdom</option>
+    <option value="Switzerland" >Switzerland</option>
+    <option value="Japan" >Japan</option>
+    <option value="China" >China</option>
+    <option value="Australia" >Australia</option>
+   
+
+</select>
+<br>
+<br>
+<input type="number" id="get_amount" name="get_amount" width="150px" style="border-radius: 5px;height: 30px; border: 1px solid black;justify-content: center;" placeholder="   Enter Amount Here">
+
+
+        </div>
+        <a href="convert.php"><button class= "convert_btn" name="submit" id="convert_btn" onclick="convert()">Convert To &#x2193;</button></a>
+        <div class="right">
+            <select name="to_amount" class="to_amount" id="to_amount" style="width: 150px;height: 30px;margin-top: 30px;">
+                <option value="usa" id="usa">United States</option>
+                <option value="india" id="india">India</option>
+                <option value="Canada" >Canada</option>
+    <option value="Mexico" >Mexico</option>
+    <option value="European Union" >European Union</option>
+    <option value="United Kingdom" >United Kingdom</option>
+    <option value="Switzerland" >Switzerland</option>
+    <option value="Japan" >Japan</option>
+    <option value="China" >China</option>
+    <option value="Australia" >Australia</option>
+   
+            
+            </select>
+            <br>
+            <br>
+          
+        
+
+        </div>
+    </div>
+    </div>
+</form>
+
+    <div class="footer">
+        <br>
+
+    </div>
+</body>
+
+<script src="index.js"></script>
+</html>
